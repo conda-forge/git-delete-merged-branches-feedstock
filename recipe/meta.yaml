@@ -1,5 +1,5 @@
 {% set name = "git-delete-merged-branches" %}
-{% set version = "7.2.0" %}
+{% set version = "7.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/git-delete-merged-branches-{{ version }}.tar.gz
-  sha256: 52c596569894481e7532d28dffbb7243547dfe3c13e6423eef18675e01b956a6
+  sha256: 6a17bf96e88fadf395fa0a079e9ff621f9aeb07c45ada16c61611353a1c2b90a
 
 build:
   entry_points:
