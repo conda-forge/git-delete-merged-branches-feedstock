@@ -21,11 +21,11 @@ requirements:
   host:
     - pip
     - setuptools >=38.6.0
-    - python >=3.7
+    - python >=3.8
   run:
     - colorama >=0.4.3
     - prompt-toolkit >=3.0.18
-    - python >=3.7
+    - python >=3.8
 
 test:
   imports:
