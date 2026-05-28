@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: git-delete-merged-branches
-  version: 7.5.1
+  version: "7.6.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 21267a68bbf8ca1e0d3ee1459bd3313ff131f64286a41eb779e29ed59a484357
+  sha256: 0922898d8199af3981ca7a29012cc6b86e09db5c57ea0227014770bf90a848d8
 
 build:
   number: 0
@@ -36,7 +36,9 @@ tests:
       imports:
         - git_delete_merged_branches
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
