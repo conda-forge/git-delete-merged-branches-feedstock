@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: git-delete-merged-branches
-  version: "7.6.1"
+  version: "7.7.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 25dbf28cdf831cf1cf4639b55fa5b9166a1aa67f261da35cdbb2931dff53bf7b
+  sha256: 56b539a72fe856014a0ca0ab1430d612285fd8dd54fff67e1350bb37431cc264
 
 build:
   number: 0
